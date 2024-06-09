@@ -1,4 +1,4 @@
-## 1. NX
+## 1. Getting started with NX
 
 Nx is a toolkit for monorepo development, primarily focused on Angular, React, Nest.js, etc.
 
@@ -11,3 +11,9 @@ Nx is a toolkit for monorepo development, primarily focused on Angular, React, N
 **Creating a new project**:
 
 `npx create-nx-workspace react-monorepo --preset=react-monorepo -pm pnpm`
+
+## 2. Running tasks
+
+Say, we have a react monorepo with "task-manager" project.
+
+1. `nx show project task-manager --web`
