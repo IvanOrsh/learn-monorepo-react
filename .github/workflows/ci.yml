@@ -15,7 +15,7 @@ jobs:
       # Setup pnpm
       - uses: pnpm/action-setup@v2
         with:
-          version: 8
+          version: 9
       - run: pnpm install --frozen-lockfile
       - run: pnpm nx build task-manager
 
