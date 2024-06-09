@@ -23,10 +23,9 @@ jobs:
       # - run: npx nx-cloud start-ci-run --distribute-on="5 linux-medium-js" --stop-agents-after="e2e-ci"
 
       # Cache node_modules
-      - uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v4
         with:
-          node-version: 20
-          cache: 'pnpm'
+          version: 8
 
       - run: pnpm ci
       - uses: nrwl/nx-set-shas@v4
